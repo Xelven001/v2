@@ -1,0 +1,83 @@
+#chartContainer {
+    max-width: 1000px;
+    margin: 20px auto; /* Center horizontally with top and bottom margin */
+    padding: 10px; /* Add padding for better visual appearance */
+    background-color: #f0f0f0; /* Add background color for visibility */
+
+    /* Additional positioning properties */
+    position: relative; /* Position relative to its normal position */
+    top: 50px; /* Move 50 pixels down from the normal position */
+}
+
+
+#chartContainer label, #chartContainer select {
+    margin: 10px; /* Adjust the margin as needed */
+    color: black; /* Set font color to white */
+
+}
+
+canvas {
+    display: block;
+    margin: auto;
+    max-width: 1000px; /* Adjust the max-width as needed */
+    width: 100%; /* Set width to 100% to fill the available space */
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* background-color: #D7E2E4; */
+    background-image: url('bg.jpg'); 
+    background-size: cover; /* Adjust the background size as needed */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #1f1e1eba;
+    margin-top: 20px; /* Adjust the top margin as needed */
+    font-size: 3em; /* Adjust the font size as needed */
+
+
+}
+
+#chartContainer {
+    max-width: 800px;
+    margin: auto;
+    background-color: #1f1e1eba;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+canvas {
+    display: block;
+    margin: auto;
+    background-color: #ccc;
+    max-width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #206779;
+}
