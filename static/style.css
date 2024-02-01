@@ -17,7 +17,7 @@
 }
 
 
-#chartContainer select {
+#chartContainer #chartContainer2 select {
     margin: 10px; /* Adjust the margin as needed */
     color: black; /* Set font color to white */
 
