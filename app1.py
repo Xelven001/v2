@@ -4,7 +4,7 @@ import sqlite3
 app1 = Blueprint('app1', __name__)
 
 
-
+@app1.route('/app1')
 
 def get_data():
     # Connect to SQLite database

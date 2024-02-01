@@ -5,6 +5,7 @@ app2 = Blueprint('app2', __name__)
 
 
 
+@app2.route('/get_data2')
 
 def get_data2():
     # Connect to SQLite database
