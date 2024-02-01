@@ -86,6 +86,15 @@ h1 {
 }
 
 
+#chartContainer2 {
+    max-width: 800px;
+    margin: auto;
+    background-color: #1f1e1eba;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 label {
     display: block;
     margin-bottom: 8px;
