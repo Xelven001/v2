@@ -61,6 +61,7 @@ body {
     background-size: cover; /* Adjust the background size as needed */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Do not repeat the background image */
+    background-attachment: fixed; /* Make the background fixed */
     margin: 0; /* Remove default body margin */
     padding: 0; /* Remove default body padding */
 }
