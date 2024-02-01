@@ -12,7 +12,7 @@ axios.get('/app2/get_data2')
         // Populate genre dropdown
         var genreDropdown = document.getElementById('genre2');
         genres.forEach(function(genre) {
-            var option = document.createElement('option2');
+            var option = document.createElement('option');
             option.value = genre;
             option.text = genre;
             genreDropdown.appendChild(option);
@@ -21,7 +21,7 @@ axios.get('/app2/get_data2')
         // Populate category dropdown
         var categoryDropdown = document.getElementById('category2');
         categories.forEach(function(category) {
-            var option = document.createElement('option2');
+            var option = document.createElement('option');
             option.value = category;
             option.text = category;
             categoryDropdown.appendChild(option);
