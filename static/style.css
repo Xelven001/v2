@@ -10,7 +10,14 @@
 }
 
 
-#chartContainer label, #chartContainer select {
+#chartContainer label {
+    margin: 10px; /* Adjust the margin as needed */
+    color: white; /* Set font color to white */
+
+}
+
+
+#chartContainer select {
     margin: 10px; /* Adjust the margin as needed */
     color: black; /* Set font color to white */
 
@@ -58,7 +65,7 @@ h1 {
 label {
     display: block;
     margin-bottom: 8px;
-    color: #333;
+    color: #fff7f7;
 }
 
 select {
