@@ -1,5 +1,7 @@
-from flask import Flask, request, render_template, jsonify
-import sqlite3
+from flask import Flask, render_template
+from app1 import app1
+from app2 import app2
+
 
 # app = Flask(__name__)
 app = Flask(__name__, static_url_path='/static', static_folder='static', template_folder='templates')
