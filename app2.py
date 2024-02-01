@@ -8,7 +8,6 @@ app2 = Blueprint('app2', __name__)
 @app2.route('/get_data2')
 
 def get_data2():
-    # Connect to SQLite database
     connection = sqlite3.connect('spotify_data.db')
     cursor = connection.cursor()
 
@@ -21,11 +20,8 @@ def get_data2():
         query = "SELECT genre, year, count(song) as 'Total Songs', avg(popularity) as 'Average Popularity', avg(danceability) as 'Average Danceability' , avg(duration_ms)/1000 as 'Average Duration(Seconds)', avg(energy) as 'Average Energy', avg(key) as 'Average Key', avg(loudness) as 'Average Loudness', avg(mode) as 'Average Mode', avg(speechiness) as 'Average Speechiness', avg(acousticness) as 'Average Acousticness', avg(instrumentalness) as 'Average Instrumentalness', avg(liveness) as 'Average Liveness', avg(valence) as 'Average Valence', avg(tempo) as 'Average Tempo' FROM song_metrics WHERE year BETWEEN '1999' and '2019' AND genre IN ('Hip-Hop','Electronic','Rock','Pop')  GROUP BY genre,year ORDER BY count(song) DESC"
         cursor.execute(query)
 
-    # Execute a query
-    # query = "SELECT genre,year, count(song) as total_songs, avg(popularity) as avg_popularity, avg(danceability) as avg_danceability FROM song_metrics WHERE year BETWEEN '1999' and '2019'  GROUP BY genre,year ORDER BY count(song) DESC"
-    # cursor.execute(query)
+ 
 
-    # Fetch data
     data = cursor.fetchall()
 
     # Get column names from the cursor description

@@ -1,69 +1,64 @@
 #chartContainer {
     max-width: 1000px;
-    margin: 20px auto; /* Center horizontally with top and bottom margin */
-    padding: 10px; /* Add padding for better visual appearance */
-    background-color: #f0f0f0; /* Add background color for visibility */
-
-    /* Additional positioning properties */
-    position: relative; /* Position relative to its normal position */
-    top: 50px; /* Move 50 pixels down from the normal position */
+    margin: 20px auto; 
+    padding: 10px; 
+    background-color: #f0f0f0; 
+    position: relative; 
+    top: 50px; 
 }
 
 #chartContainer2 {
     max-width: 1000px;
-    margin: 20px auto; /* Center horizontally with top and bottom margin */
-    padding: 10px; /* Add padding for better visual appearance */
-    background-color: #f0f0f0; /* Add background color for visibility */
-
-    /* Additional positioning properties */
-    position: relative; /* Position relative to its normal position */
-    top: 50px; /* Move 50 pixels down from the normal position */
+    margin: 20px auto; 
+    padding: 10px; 
+    background-color: #f0f0f0; 
+    position: relative; 
+    top: 50px; 
 }
 
 
 #chartContainer label {
-    margin: 10px; /* Adjust the margin as needed */
-    color: white; /* Set font color to white */
+    margin: 10px; 
+    color: white; 
 
 }
 
 #chartContainer2 label {
-    margin: 10px; /* Adjust the margin as needed */
-    color: white; /* Set font color to white */
+    margin: 10px; 
+    color: white; 
 
 }
 
 #chartContainer select {
-    margin: 10px; /* Adjust the margin as needed */
-    color: black; /* Set font color to white */
+    margin: 10px; 
+    color: black; 
 
 }
 
 
 #chartContainer2 select {
-    margin: 10px; /* Adjust the margin as needed */
-    color: black; /* Set font color to white */
+    margin: 10px; 
+    color: black; 
 
 }
 
 canvas {
     display: block;
     margin: auto;
-    max-width: 1000px; /* Adjust the max-width as needed */
-    width: 100%; /* Set width to 100% to fill the available space */
+    max-width: 1000px; 
+    width: 100%; 
 
 }
 
 body {
     font-family: 'Arial', sans-serif;
-    /* background-color: #D7E2E4; */
     background-image: url('bg.jpg'); 
-    background-size: cover; /* Adjust the background size as needed */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Do not repeat the background image */
-    background-attachment: fixed; /* Make the background fixed */
-    margin: 0; /* Remove default body margin */
-    padding: 0; /* Remove default body padding */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    margin: 0; 
+    padding: 0; 
 }
 
 h1 {
@@ -71,10 +66,8 @@ h1 {
     color: #ffffff;
     font-family: "Times New Roman", Times, serif;
     background-color: #1f1e1eba;
-    margin-top: 20px; /* Adjust the top margin as needed */
-    font-size: 3em; /* Adjust the font size as needed */
-
-
+    margin-top: 20px; 
+    font-size: 3em; 
 }
 
 #chartContainer {
