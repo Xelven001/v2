@@ -43,7 +43,7 @@ function updateBarGraph() {
     var selectedCategory = document.getElementById('category').value;
 
     // Fetch filtered data based on selected genre
-    axios.get(`/get_data?genre=${selectedGenre}`)
+    axios.get(`/app1/get_data?genre=${selectedGenre}`)
         .then(function(response) {
             // Extract values for the selected category
             var values = response.data.map(item => item[selectedCategory]);
