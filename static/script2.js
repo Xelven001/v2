@@ -7,18 +7,18 @@ axios.get('/app2/get_data2')
         var categories = Object.keys(response.data[0]).filter(column => !['genre', 'year'].includes(column));
 
         // Populate genre dropdown
-        var genreDropdown = document.getElementById('genre');
+        var genreDropdown = document.getElementById('genre2');
         genres.forEach(function(genre) {
-            var option = document.createElement('option');
+            var option = document.createElement('option2');
             option.value = genre;
             option.text = genre;
             genreDropdown.appendChild(option);
         });
 
         // Populate category dropdown
-        var categoryDropdown = document.getElementById('category');
+        var categoryDropdown = document.getElementById('category2');
         categories.forEach(function(category) {
-            var option = document.createElement('option');
+            var option = document.createElement('option2');
             option.value = category;
             option.text = category;
             categoryDropdown.appendChild(option);
@@ -32,15 +32,15 @@ axios.get('/app2/get_data2')
     });
 
 // Event listener for dropdown changes
-document.getElementById('genre').addEventListener('change', updateBarGraph);
-document.getElementById('category').addEventListener('change', updateBarGraph);
+document.getElementById('genre2').addEventListener('change', updateBarGraph);
+document.getElementById('category2').addEventListener('change', updateBarGraph);
 
 // Function to update bar graph
 // Function to update bar graph
 function updateBarGraph() {
     // Get selected genre and category
-    var selectedGenre = document.getElementById('genre').value;
-    var selectedCategory = document.getElementById('category').value;
+    var selectedGenre = document.getElementById('genre2').value;
+    var selectedCategory = document.getElementById('category2').value;
 
     // Fetch filtered data based on selected genre
     axios.get(`/app2/get_data2?genre=${selectedGenre}`)
