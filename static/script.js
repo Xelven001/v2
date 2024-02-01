@@ -1,4 +1,4 @@
-axios.get('/get_data')
+axios.get('/app1/get_data')
     .then(function(response) {
 
         console.log(response.data);    
