@@ -7,8 +7,8 @@ from app2 import app2
 app = Flask(__name__, static_url_path='/static', static_folder='static', template_folder='templates')
 
 # Endpoint to get data from SQLite
-app.register_blueprint(app1)
-app.register_blueprint(app2)
+app.register_blueprint(app1, url_prefix='/app1')
+app.register_blueprint(app2, url_prefix='/app2')
 
 # Route to the HTML page
 @app.route('/')
