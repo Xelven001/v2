@@ -9,6 +9,17 @@
     top: 50px; /* Move 50 pixels down from the normal position */
 }
 
+#chartContainer2 {
+    max-width: 1000px;
+    margin: 20px auto; /* Center horizontally with top and bottom margin */
+    padding: 10px; /* Add padding for better visual appearance */
+    background-color: #f0f0f0; /* Add background color for visibility */
+
+    /* Additional positioning properties */
+    position: relative; /* Position relative to its normal position */
+    top: 50px; /* Move 50 pixels down from the normal position */
+}
+
 
 #chartContainer label {
     margin: 10px; /* Adjust the margin as needed */
@@ -16,6 +27,11 @@
 
 }
 
+#chartContainer2 label {
+    margin: 10px; /* Adjust the margin as needed */
+    color: white; /* Set font color to white */
+
+}
 
 #chartContainer select {
     margin: 10px; /* Adjust the margin as needed */
@@ -68,6 +84,7 @@ h1 {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 label {
     display: block;
