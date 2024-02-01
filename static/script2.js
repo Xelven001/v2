@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', function () {
+
+
 axios.get('/app2/get_data2')
     .then(function(response) {
 
@@ -50,13 +53,13 @@ function updateBarGraph() {
             var years = response.data.map(item => item.year);
 
             // Clear previous chart instance
-            if (window.myBarChart) {
-                window.myBarChart.destroy();
+            if (window.myBarChart2) {
+                window.myBarChart2.destroy();
             }
 
             // Create a bar chart
             var ctx = document.getElementById('barGraph2').getContext('2d');
-            window.myBarChart = new Chart(ctx, {
+            window.myBarChart2 = new Chart(ctx, {
                 type: 'bar',
                 data: {
                     labels: years,
@@ -97,3 +100,4 @@ function updateBarGraph() {
             console.error('Error fetching filtered data:', error);
         });
 }
+});
