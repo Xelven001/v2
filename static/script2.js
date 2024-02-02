@@ -118,15 +118,25 @@ function updateLineChart() {
                 options: {
                     scales: {
                         x: {
-                            type: 'linear',
-                            position: 'bottom',
+                            type: 'time', // Set x-axis type to time
+                            time: {
+                                unit: 'year', // Specify the time unit
+                                unitStepSize: 1 // Specify the time unit step size
+                            },
                             title: {
                                 display: true,
                                 text: 'Year'
-                            },
-                            ticks: {
-                                precision: 0,
                             }
+                        // x: {
+                        //     type: 'linear',
+                        //     position: 'bottom',
+                        //     title: {
+                        //         display: true,
+                        //         text: 'Year'
+                        //     },
+                        //     ticks: {
+                        //         precision: 0,
+                        //     }
                         },
                         y: {
                             beginAtZero: true,
