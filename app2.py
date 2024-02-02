@@ -21,7 +21,7 @@ def get_data2():
                     WHERE genre = ? \
                     AND genre IN ('Hip-Hop','Electronic','Rock','Pop')\
                     GROUP BY year\
-                    ORDER BY sum(explicit) DESC"       
+                    "       
         cursor.execute(query, (selected_genre,))
     else:
         query = "SELECT year,\
@@ -30,7 +30,7 @@ def get_data2():
                     FROM song_metrics\
                     WHERE genre IN ('Hip-Hop','Electronic','Rock','Pop')\
                     GROUP BY year\
-                    ORDER BY sum(explicit) DESC"        
+                    "        
         cursor.execute(query)
 
 
