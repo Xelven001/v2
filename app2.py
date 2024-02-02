@@ -15,7 +15,8 @@ def get_data2():
 
     if selected_genre:
         query = f"SELECT year,\
-                     SUM(explicit) as count   \
+                    genre,\
+                    SUM(explicit) as count   \
                     FROM song_metrics\
                     WHERE genre = ? \
                     AND genre IN ('Hip-Hop','Electronic','Rock','Pop')\
@@ -24,6 +25,7 @@ def get_data2():
         cursor.execute(query, (selected_genre,))
     else:
         query = "SELECT year,\
+                    genre,\
                     SUM(explicit) as count    \
                     FROM song_metrics\
                     WHERE genre IN ('Hip-Hop','Electronic','Rock','Pop')\
