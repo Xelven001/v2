@@ -1,2 +1,26 @@
 ##Visualization Narratives
 write a narrative for eaxh visualization, what can say, what it means, analysis
+
+10 min presentation
+
+how create database, how set it up, how transform it, clean up, 
+javascript chartjs 
+
+canva -> https://www.kaggle.com/datasets/paradisejoy/top-hits-spotify-from-20002019/data 
+
+
+DRAFT V!
+interactive #1
+genre -> average metric : change in metric over time for genre
+The first interactive set of charts has users select genre and then a metric 
+it shows each genre and metric over to track changes in the genre over time
+music evolves and changes, what is 'pop' in the past is relative to its time -> show changes like duration
+can track evolutions in music over the past two decades -> music branches into different genres, or different genres are popular
+pop ->  a contemporary form of music that appeals to a very wide audience -> genre shifts from decade to decade 80s rock to 90s boybands 
+
+
+
+interactive #2
+genre : count of songs over time 
+might reflect popularity of certain genres over time -> 
+
