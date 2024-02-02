@@ -26,7 +26,7 @@ def get_data2():
         query = "SELECT year,\
                     SUM(explicit) as count    \
                     FROM song_metrics\
-                    AND genre IN ('Hip-Hop','Electronic','Rock','Pop')\
+                    WHERE genre IN ('Hip-Hop','Electronic','Rock','Pop')\
                     GROUP BY year\
                     ORDER BY sum(explicit) DESC"        
         cursor.execute(query)
