@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     window.myBarChart3.destroy();
                 }
     
-                var ctx = document.getElementById('barGraph2').getContext('2d');
+                var ctx = document.getElementById('barGraph3').getContext('2d');
                 window.myBarChart3 = new Chart(ctx, {
                     type: 'bar',
                     data: {
