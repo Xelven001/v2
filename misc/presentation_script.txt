@@ -10,16 +10,33 @@ canva -> https://www.kaggle.com/datasets/paradisejoy/top-hits-spotify-from-20002
 
 
 
-Intro
+~ ~ ~ Intro ~ ~ ~ 
 Hello, welcome to our presentation about Spotify Data Visualizations, I'm [introduction of everyone here]
 Our group focused on analyzing top music trends between 1998 and 2020
 
+~ ~ ~ Project Goals ~ ~ ~ 
+Our project's main objective was to analyze the Spotify dataset and discern any notable patterns or trends from it
+Some specific goals we had in mind included how different music variables vary across time and genre
+  Music variables here refer to different ways to measure or quantify a song, including beats per minute (bpm or tempo), or loudness (measured in decibels dB)
+  We wanted specifically to see how 
+
+
+Specific Goals: 
+  Investigae how music variables such as speechiness, acousstiness, energy (etc) vary across time and genre. 
+  Investigate how explicitness varies across time and genre
+  Investigate how song duration changes across time and genre. 
+Generate interactive visualizations that effectively communicate trends
+
+Overall Objective: Understand and analyze Spotiify music dataset patterns and trends
+Specific Goals: 
+Investigae how music variables such as speechiness, acousstiness, energy (etc) vary across time and genre. 
+Investigate how explicitness varies across time and genre
+Investigate how song duration changes across time and genre. 
+Generate interactive visualizations that effectively communicate trends
 
 
 how create database, how set it up, how transform it, clean up, 
-javascript chartjs 
-
-canva -> https://www.kaggle.com/datasets/paradisejoy/top-hits-spotify-from-20002019/data 
+javascript chartjs  
 
 
 DRAFT V!
