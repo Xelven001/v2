@@ -14,9 +14,9 @@ def get_data3():
     selected_genre = request.args.get('genre3')
 
     if selected_genre:
-        query = f"SELECT *
-                    FROM song_metrics
-                    WHERE genre = ? 
+        query = f"SELECT * \
+                    FROM song_metrics\
+                    WHERE genre = ? \
                     AND genre IN ('Hip-Hop','Electronic','Rock','Pop')"
         cursor.execute(query, (selected_genre,))
     else:
