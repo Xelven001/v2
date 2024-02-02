@@ -69,7 +69,7 @@ function updateLineChart() {
                             }
                         },
                         y: {
-                            beginAtZero: true,
+                            // beginAtZero: true,
                             title: {
                                 display: true,
                                 text: 'Count of Songs'
