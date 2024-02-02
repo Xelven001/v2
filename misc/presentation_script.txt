@@ -1,7 +1,20 @@
-##Visualization Narratives
-write a narrative for eaxh visualization, what can say, what it means, analysis
+Presentation Script
 
-10 min presentation
+note to jackie: make an outline of the presentation, then write the script
+
+prompt: write a narrative for each visualization -> what can you say about each one, what they say about music trends, what that means, analysis
+
+note to jackie: 10 minute long script -> time it
+
+canva -> https://www.kaggle.com/datasets/paradisejoy/top-hits-spotify-from-20002019/data 
+
+
+
+Intro
+Hello, welcome to our presentation about Spotify Data Visualizations, I'm [introduction of everyone here]
+Our group focused on analyzing top music trends between 1998 and 2020
+
+
 
 how create database, how set it up, how transform it, clean up, 
 javascript chartjs 
