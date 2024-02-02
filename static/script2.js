@@ -25,11 +25,10 @@ axios.get('/app2/get_data2')
 
 document.getElementById('genre2').addEventListener('change', updateLineChart);
 
-
 function updateLineChart() {
     var selectedGenre = document.getElementById('genre2').value;
 
-    axios.get(`/app2/get_data2?genre=${selectedGenre}`)
+    axios.get(`/app2/get_data2?genre2=${selectedGenre}`)  // Update the query parameter name
         .then(function(response) {
             var data = response.data;
 
@@ -84,5 +83,68 @@ function updateLineChart() {
             console.error('Error fetching filtered data:', error);
         });
 }
-
 });
+
+
+
+
+// function updateLineChart() {
+//     var selectedGenre = document.getElementById('genre2').value;
+
+//     axios.get(`/app2/get_data2?genre=${selectedGenre}`)
+//         .then(function(response) {
+//             var data = response.data;
+
+//             // Extract year and count data
+//             var years = data.map(item => item.year);
+//             var counts = data.map(item => item.count);
+
+//             // Destroy the existing chart if it exists
+//             if (window.myLineChart) {
+//                 window.myLineChart.destroy();
+//             }
+
+//             // Create a new line chart
+//             var ctx = document.getElementById('LineChart2').getContext('2d');
+//             window.myLineChart = new Chart(ctx, {
+//                 type: 'line',
+//                 data: {
+//                     labels: years,
+//                     datasets: [{
+//                         label: 'Count of Songs',
+//                         data: counts,
+//                         backgroundColor: '#217A8D',
+//                         borderColor: 'black',
+//                         borderWidth: 1
+//                     }]
+//                 },
+//                 options: {
+//                     scales: {
+//                         x: {
+//                             type: 'linear',
+//                             position: 'bottom',
+//                             title: {
+//                                 display: true,
+//                                 text: 'Year'
+//                             },
+//                             ticks: {
+//                                 precision: 0,
+//                             }
+//                         },
+//                         y: {
+//                             beginAtZero: true,
+//                             title: {
+//                                 display: true,
+//                                 text: 'Count of Songs'
+//                             }
+//                         }
+//                     }
+//                 }
+//             });
+//         })
+//         .catch(function(error) {
+//             console.error('Error fetching filtered data:', error);
+//         });
+// }
+
+// });
