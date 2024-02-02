@@ -46,7 +46,7 @@ function updateLineChart() {
             window.myLineChart = new Chart(ctx, {
                 type: 'line',
                 data: {
-                    labels: years.map(String), // Convert years to strings for time scale
+                    labels: years,
                     datasets: [{
                         label: 'Count of Songs',
                         data: counts,
@@ -58,26 +58,29 @@ function updateLineChart() {
                 options: {
                     scales: {
                         x: {
-                            type: 'time', // Use time scale
+                            type: 'time',
                             time: {
-                                unit: 'year' // Set the time unit to 'year'
-                            },
-                            title: {
-                                display: true,
-                                text: 'Year'
-                            }
+                                unit: 'year', // or 'month', 'day', etc.
+                                displayFormats: {
+                                    year: 'YYYY'
+                                }
                         },
                         y: {
+                            // beginAtZero: true,
                             title: {
                                 display: true,
                                 text: 'Count of Songs'
                             }
-                            // You can remove the `beginAtZero` property if needed
                         }
                     }
                 }
             });
-            
+        })
+        .catch(function(error) {
+            console.error('Error fetching filtered data:', error);
+        });
+}
+});
 
 
 
