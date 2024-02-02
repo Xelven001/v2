@@ -17,6 +17,15 @@
 }
 
 
+#chartContainer3 {
+    max-width: 1000px;
+    margin: 20px auto; 
+    padding: 10px; 
+    background-color: #f0f0f0; 
+    position: relative; 
+    top: 50px; 
+}
+
 #chartContainer label {
     margin: 10px; 
     color: white; 
@@ -24,6 +33,12 @@
 }
 
 #chartContainer2 label {
+    margin: 10px; 
+    color: white; 
+
+}
+
+#chartContainer3 label {
     margin: 10px; 
     color: white; 
 
@@ -40,6 +55,11 @@
     margin: 10px; 
     color: black; 
 
+}
+
+#chartContainer3 select {
+    margin: 10px; 
+    color: black; 
 }
 
 canvas {
@@ -87,7 +107,20 @@ h1 {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    
 }
+#chartContainer3 {
+    max-width: 800px;
+    margin: auto;
+    background-color: #1f1e1eba;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    
+}
+
 
 label {
     display: block;
