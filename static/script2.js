@@ -43,7 +43,7 @@ function updateLineChart() {
             }
 
             // Create a new line chart
-            var ctx = document.getElementById('lineChart2').getContext('2d');
+            var ctx = document.getElementById('LineChart2').getContext('2d');
             window.myLineChart = new Chart(ctx, {
                 type: 'line',
                 data: {
