@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
 
-    axios.get('/app3/get_data2')
+    axios.get('/app3/get_data3')
         .then(function(response) {
     
             console.log(response.data);    
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
                 // Extract year and count data
                 var years = data.map(item => item.year);
-                var counts = data.map(item => item.count);
+                var duration = data.map(item => item.duration);
     
                 // Destroy the existing chart if it exists
                 if (window.myLineChart2) {
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         labels: years,
                         datasets: [{
                             label: 'Count of Songs',
-                            data: counts,
+                            data: duration,
                             backgroundColor: '#217A8D',
                             borderColor: 'black',
                             borderWidth: 1
