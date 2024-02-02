@@ -14,7 +14,7 @@ def get_data2():
     selected_genre = request.args.get('genre2')
 
     if selected_genre:
-        query = f"SELECT CAST(year AS TEXT) as year,\
+        query = f"SELECT strftime('%Y', year) as year,\
                     genre,\
                     SUM(explicit) as count   \
                     FROM song_metrics\
@@ -24,7 +24,7 @@ def get_data2():
                     "       
         cursor.execute(query, (selected_genre,))
     else:
-        query = "SELECT CAST(year AS TEXT) as year,\
+        query = "SELECT strftime('%Y', year) as year,\
                     genre,\
                     SUM(explicit) as count    \
                     FROM song_metrics\
