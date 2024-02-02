@@ -1,13 +1,13 @@
 from flask import Blueprint, request, jsonify
 import sqlite3
 
-app2 = Blueprint('app3', __name__)
+app3 = Blueprint('app3', __name__)
 
 
 
-@app2.route('/get_data3')
+@app3.route('/get_data3')
 
-def get_data2():
+def get_data3():
     connection = sqlite3.connect('spotify_data.db')
     cursor = connection.cursor()
 
