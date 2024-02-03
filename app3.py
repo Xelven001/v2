@@ -21,7 +21,7 @@ def get_data():
                     WHERE genre = ? \
                     AND genre IN ('Hip-Hop','Electronic','Rock','Pop')\
                     AND year BETWEEN '2000' and '2019'\
-                    GROUP BY year\
+                    GROUP BY year,genre\
                     "       
         cursor.execute(query, (selected_genre,))
     else:
@@ -31,7 +31,7 @@ def get_data():
                     FROM song_metrics\
                     WHERE genre IN ('Hip-Hop','Electronic','Rock','Pop')\
                     AND year BETWEEN '2000' and '2019'\
-                    GROUP BY year\
+                    GROUP BY year,genre\
                     "        
         cursor.execute(query)
 

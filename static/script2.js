@@ -51,7 +51,7 @@ function updateLineChart() {
                     datasets: [{
                         label: 'Count of Songs',
                         data: counts,
-                        backgroundColor: '#217A8D',
+                        backgroundColor: '#38761d',
                         borderColor: 'black',
                         borderWidth: 1
                     }]
