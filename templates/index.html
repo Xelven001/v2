@@ -12,12 +12,17 @@
 
 </head>
 <body>
+    
+    
+    <div id="common-container"></div>
+    <script src="{{ url_for('static', filename='common.js') }}"></script>
+    
 
-<h1>Spotify Dashboard</h1>
 
-<div id="chartContainer">
-    <label for="genre">Select Genre:</label>
-    <select id="genre"></select>
+
+<div id="chartContainer" class="chart-container">
+    <label for="genre" class = chart-label>Select Genre:</label>
+    <select id="genre" class = chart-select></select>
 
     <label for="category">Select Category:</label>
     <select id="category"></select>
@@ -30,9 +35,9 @@
   
 </div>
 
-<div id="chartContainer2">
-    <label for="genre2">Select Genre:</label>
-    <select id="genre2"></select>
+<div id="chartContainer2" class="chart-container">
+    <label for="genre2" class = chart-label>Select Genre:</label>
+    <select id="genre2" class = chart-select></select>
 
 
     <canvas id="LineChart2"></canvas>
@@ -43,15 +48,27 @@
   
 </div>
 
-<div id="chartContainer3">
-    <label for="genre3">Select Genre:</label>
-    <select id="genre3"></select>
+<div id="chartContainer3" class="chart-container">
+    <label for="genre3" class = chart-label>Select Genre:</label>
+    <select id="genre3" class = chart-select></select>
 
 
     <canvas id="LineChart3"></canvas>
 </div>
 
 
+<div>
+  
+<!-- </div>
+
+<div id="chartContainer4" class="chart-container">
+    <label for="year4" class = chart-label>Select Year:</label>
+    <select id="year4" class = chart-select></select>
+    <label for="category4">Select Category:</label>
+    <select id="category4"></select>
+
+    <canvas id="HistogramChart"></canvas>
+</div> -->
 
 
 
@@ -61,6 +78,8 @@
 <script src="{{ url_for('static', filename='script.js') }}"></script>
 <script src="{{ url_for('static', filename='script2.js') }}"></script>
 <script src="{{ url_for('static', filename='script3.js') }}"></script>
+<!-- <script src="{{ url_for('static', filename='script4.js') }}"></script> -->
+
 
 
 

@@ -5,9 +5,9 @@ app3 = Blueprint('app3', __name__)
 
 
 
-@app3.route('/get_data3')
+@app3.route('/get_data')
 
-def get_data3():
+def get_data():
     connection = sqlite3.connect('spotify_data.db')
     cursor = connection.cursor()
 
@@ -20,6 +20,7 @@ def get_data3():
                     FROM song_metrics\
                     WHERE genre = ? \
                     AND genre IN ('Hip-Hop','Electronic','Rock','Pop')\
+                    AND year BETWEEN '2000' and '2019'\
                     GROUP BY year\
                     "       
         cursor.execute(query, (selected_genre,))
@@ -29,6 +30,7 @@ def get_data3():
                     avg(duration_ms)/1000 as duration     \
                     FROM song_metrics\
                     WHERE genre IN ('Hip-Hop','Electronic','Rock','Pop')\
+                    AND year BETWEEN '2000' and '2019'\
                     GROUP BY year\
                     "        
         cursor.execute(query)

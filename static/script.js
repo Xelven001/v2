@@ -23,7 +23,7 @@ axios.get('/app1/get_data')
             categoryDropdown.appendChild(option);
         });
 
-        updateBarGraph();
+        updateBarGraph(); 
     })
     .catch(function(error) {
         console.error('Error fetching data:', error);

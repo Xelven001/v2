@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
 
-    axios.get('/app3/get_data3')
+    axios.get('/app3/get_data')
         .then(function(response) {
     
             console.log(response.data);    
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateLineChart() {
         var selectedGenre = document.getElementById('genre3').value;
     
-        axios.get(`/app3/get_data3?genre3=${selectedGenre}`)
+        axios.get(`/app3/get_data?genre3=${selectedGenre}`)
             .then(function(response) {
                 var data = response.data;
     
