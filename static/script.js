@@ -55,7 +55,7 @@ function updateBarGraph() {
                     datasets: [{
                         label: selectedCategory,
                         data: values,
-                        backgroundColor: '#217A8D',
+                        backgroundColor: '#38761d',
                         borderColor: 'black',
                         borderWidth: 1
                     }]

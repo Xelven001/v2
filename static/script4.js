@@ -1,14 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-
-    axios.get('/app3/get_data')
+    axios.get('/app4/get_data')
         .then(function(response) {
     
             console.log(response.data);    
             var genres = [...new Set(response.data.map(item => item.genre))];
-            // var categories = Object.keys(response.data[0]).filter(column => !['genre', 'year'].includes(column));
+            var categories = Object.keys(response.data[0]).filter(column => !['genre', 'year'].includes(column));
     
-            var genreDropdown = document.getElementById('genre3');
+            var genreDropdown = document.getElementById('genre4');
             genres.forEach(function(genre) {
                 var option = document.createElement('option');
                 option.value = genre;
@@ -16,41 +15,46 @@ document.addEventListener('DOMContentLoaded', function () {
                 genreDropdown.appendChild(option);
             });
     
+            var categoryDropdown = document.getElementById('category4');
+            categories.forEach(function(category) {
+                var option = document.createElement('option');
+                option.value = category;
+                option.text = category;
+                categoryDropdown.appendChild(option);
+            });
     
-            updateLineChart();
+            updateBarGraph(); 
         })
         .catch(function(error) {
             console.error('Error fetching data:', error);
         });
     
-    document.getElementById('genre3').addEventListener('change', updateLineChart);
+    document.getElementById('genre4').addEventListener('change', updateBarGraph);
+    document.getElementById('category4').addEventListener('change', updateBarGraph);
     
     
-    function updateLineChart() {
-        var selectedGenre = document.getElementById('genre3').value;
+    function updateBarGraph() {
+        var selectedGenre = document.getElementById('genre4').value;
+        var selectedCategory = document.getElementById('category4').value;
     
-        axios.get(`/app3/get_data?genre3=${selectedGenre}`)
+        axios.get(`/app4/get_data?genre4=${selectedGenre}`)
             .then(function(response) {
-                var data = response.data;
     
-                // Extract year and count data
-                var years = data.map(item => item.year);
-                var duration = data.map(item => item.duration);
+                var values = response.data.map(item => item[selectedCategory]);
+                var years = response.data.map(item => item.year);
     
-                // Destroy the existing chart if it exists
-                if (window.myLineChart2) {
-                    window.myLineChart2.destroy();
+                if (window.myBarChart) {
+                    window.myBarChart.destroy();
                 }
     
-                // Create a new line chart
-                var ctx = document.getElementById('LineChart3').getContext('2d');
-                window.myLineChart2 = new Chart(ctx, {
-                    type: 'line',
+                var ctx = document.getElementById('barGraph4').getContext('2d');
+                window.myBarChart = new Chart(ctx, {
+                    type: 'bar',
                     data: {
                         labels: years,
                         datasets: [{
-                            label: 'Avg Lenght of Songs (Seconds)',
-                            data: duration,
+                            label: selectedCategory,
+                            data: values,
                             backgroundColor: '#38761d',
                             borderColor: 'black',
                             borderWidth: 1
@@ -66,14 +70,15 @@ document.addEventListener('DOMContentLoaded', function () {
                                     text: 'Year'
                                 },
                                 ticks: {
-                                    precision: 0,
+                                    precision: 0, // Trying to fix date issue showing as 1,999 vs 1999
                                 }
                             },
+                            
                             y: {
                                 beginAtZero: true,
                                 title: {
                                     display: true,
-                                    text: 'Lenght of Songs(Seconds)'
+                                    text: selectedCategory
                                 }
                             }
                         }
@@ -84,5 +89,4 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.error('Error fetching filtered data:', error);
             });
     }
-    
     });
