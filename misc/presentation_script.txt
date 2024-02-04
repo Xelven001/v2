@@ -21,13 +21,25 @@ version3
 -----Data Sources-----
 We chose the dataset 'Top Hits Spotify from 2000-2019.' This is provided by Data Science company Kaggle has statistics of the top 2000 tracks from Spotify between 1998 and 2020. It contains 18 columns describing the tracks including genre, loudness, duration, and more. 
 
+-----Considerations and Limitations-----
+      There are a few considerations and limits to take into account
+      Firstly, this data is limited by source. It only comes from one place, Spotify. The data isn't cross-referenced with other sources such as the Billboard Hot 100, Apple Music, or other metrics that track music. 
+      Secondly, the dataset is relatively small compared to music as a whole. It only considers 'top hits.' This means songs that didn't chart or were not as popular are not considered in the dataset. It merges genres, so if only a few songs in a genre were included, the sample size is much smaller. To explain, in 2010 Pop had 44 songs compared to Rock having only 2. The sample sizes, when comparing genre, are inequal.
+      Secondly, what is considered a 'top hit' is not designated within the dataset. How 'popular' a song is is not revealed, if its based on streams, on radio plays, etc. 
 
-      More specifically, we wanted to investigate quantitatively how genres differ. Qualitatively they differ based on sound, origin, theme. To study then quantitatively the dataset included measured variables. These include speechiness (words compared to non-word parts of a recording) or tempo (measured in beats per minute). With these quantitative variables we can mathmatecally analyze the data. 
-      We also were interested in investingating how explicit songs trended to be across time and genre, and which time or genre was more expplicit
-      Lastly, another investigation was how song duration tended to change across time and genre, as songs have a lot of variability in length. 
-      For all of this we generated interactive visualizations to communicate the trends.
+This means the music is limited to one source, and not from any other metrics of measuring popularity such as the Billboard Hot 100 or number of streams on other websites. This also means that songs that were not considered 'top hits' are not included. Also, the data is not uniform across years. For example, 1998 has only one song (or datapoint) compared to 1999 which has 50+ songs (datapoints). 
+      Secondly, 
 
------Data Sources-----
+
+Smaller dataset
+data completeness 
+genre and/or cultural shifts 
+limited dataset size 
+metadata limitations
+user preferences
+sorry for scaring you!!! all good!
+ one source, not said how they decided ‘popularity’, data not uniform across years (1998 only has 1 song/datapoint compared to other yrs)
+
 
 
 -----Considerations and Limitations-----
