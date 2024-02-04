@@ -7,27 +7,41 @@ Presentation Script
 notes for meeting:
 What mean with limitations on canva, what is 'user preference' mean? Like, how to explain it more in detail.
 ask to elaborate more on making the database so I can fill the script
+i moved the dataset slide  it makes logical sense in my head but can move in case
 
 
 version 3
 -----Intro-----
       Hello and welcome to our presentation, Spotify Data Visualizations. Our group studied trends of four different music genres from between 1998 and 2020, then created an interactive website to display our findings. Hello I'm (everyone introduces themselves)
+      We chose this topic because music is an integral part of society that reflects and influences culture. Music changes over time as genres influence each other or emerge. Our presentation is a small glimpse into some of the trends that have occurred in the past two decades. 
 
-
-version3
------Intro-----
-      Hello and welcome to our presentation, Spotify Data Visualizations. Our group analyzed music trends between 1998 and 2020, then created an interactive website to display them. Hello, I'm [everyone introduces themselves]. 
-      We chose this topic because music is an integral part of society that reflects and influences culture. Music changes over time and genres influence each other or emerge. Our presentation is a small glimpse into what trends have occurred during two decades. 
+-----Data Sources-----
+      We used the dataset 'Top Hits Spotify from 2000-2019' for our analysis. Its provided by data science company Kaggle and has statistics of the top 2,000 tracks between 1998 and 2020. 
+      The dataset has 18 columns that break down different aspects of each track, for example genre and song duration. To elaborate, the music was quantified based on tempo (aka beats per minute), speechiness (how 'spoken' the track is), and loudness (measured in decibels).
 
 -----Project Goals-----
-      To begin, our main objective was to analyze the data for any notable patterns ot trends. The music was quantified based on variables such as song duration, tempo (aka beats per minute, bpm), and speechiness (how much speech was in the track). 
+      To begin, our overall objective was to analyze the dataset for patterns and trends. What was the data saying by itself before we looked for specific metrics? Did anything stand out?
+      More specifically, we wanted to investigate quantitatively 
+
+
+
+Specific Goals: 
+Investigate how music variables vary across time and genre
+speechiness
+acousstiness
+energy 
+explicitness 
+song duration  
+
+version3
+
+-----Project Goals-----
       More specifically, we wanted to investigate quantitatively how music varies depending on time or genre. Some notable examples include rock from the 50s compared to rock from the 70s, such as Elvis Presley versus Queen. Both are rock but are very different. While 'style' or 'vibe' aren't measurable, factors like duration or danceability can be measured and tracked over time. 
       We also wanted to investigate explicitness across time and genre. As society trends towards being more accepting and open, how does explicitness change over time? 
       Lastly, another specific apsect we wanted to investigate was how song duration changed over time, as it was a personal observation that songs seemed "shorter these days." 
       The data will reveal how each aspect affects music (something something)
 
------Data Sources-----
-We chose the dataset 'Top Hits Spotify from 2000-2019.' This is provided by Data Science company Kaggle has statistics of the top 2000 tracks from Spotify between 1998 and 2020. It contains 18 columns describing the tracks including genre, loudness, duration, and more. 
+
 
 -----Considerations and Limitations-----
       There are a few limitations to take into account
