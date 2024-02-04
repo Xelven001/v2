@@ -37,18 +37,18 @@ document.addEventListener('DOMContentLoaded', function () {
         var selectedGenre = document.getElementById('genre4').value;
         var selectedCategory = document.getElementById('category4').value;
     
-        axios.get(`/app4/get_data?genre=${selectedGenre}`)
+        axios.get(`/app4/get_data?genre4=${selectedGenre}`)
             .then(function(response) {
     
                 var values = response.data.map(item => item[selectedCategory]);
                 var years = response.data.map(item => item.year);
     
-                if (window.myBarChart4) {
-                    window.myBarChart4.destroy();
+                if (window.myBarChart) {
+                    window.myBarChart.destroy();
                 }
     
                 var ctx = document.getElementById('barGraph4').getContext('2d');
-                window.myBarChart4 = new Chart(ctx, {
+                window.myBarChart = new Chart(ctx, {
                     type: 'bar',
                     data: {
                         labels: years,

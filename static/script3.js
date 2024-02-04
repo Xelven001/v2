@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     data: {
                         labels: years,
                         datasets: [{
-                            label: 'Count of Songs',
+                            label: 'Avg Lenght of Songs (Seconds)',
                             data: duration,
                             backgroundColor: '#38761d',
                             borderColor: 'black',
