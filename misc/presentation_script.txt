@@ -1,18 +1,18 @@
 Presentation Script
-
-note to jackie: make an outline of the presentation, then write the script
-
-prompt: write a narrative for each visualization -> what can you say about each one, what they say about music trends, what that means, analysis
-
-note to jackie: 10 minute long script -> time it
-
-canva -> https://www.kaggle.com/datasets/paradisejoy/top-hits-spotify-from-20002019/data 
+      prompt: write a narrative for each visualization -> what can say about each one, what they sat about music trends, what that means, analysis
+      notes: 10 minute long script -> time it
+             make an outline of the presentation, then write the script
+      canva -> https://www.kaggle.com/datasets/paradisejoy/top-hits-spotify-from-20002019/data 
 
 
+-----Intro-----
+Hello and welcome to our presentation, Spotify Data Visualizations. Our group focused on analyzing top music trends between 1998 and 2020 and created an interactive website to display it. I'm {everyone introduces themselves}.
 
-~ ~ ~ Intro ~ ~ ~ 
-Hello, welcome to our presentation about Spotify Data Visualizations, I'm [introduction of everyone here]
-Our group focused on analyzing top music trends between 1998 and 2020
+-----Project Goals-----
+To begin, our data. We chose the dataset 'Top Hits Spotify from 2000-2019.' We chose this dataset because it was interesting to analyze. 
+
+
+
 
 ~ ~ ~ Project Goals ~ ~ ~ 
 Our project's main objective was to analyze the Spotify dataset and discern any notable patterns or trends from it
