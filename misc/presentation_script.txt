@@ -5,7 +5,6 @@ Presentation Script
       canva -> https://www.kaggle.com/datasets/paradisejoy/top-hits-spotify-from-20002019/data 
 
 notes for meeting:
-What mean with limitations on canva, what is 'user preference' mean? Like, how to explain it more in detail.
 ask to elaborate more on making the database so I can fill the script
 i moved the dataset slide  it makes logical sense in my head but can move in case
 
