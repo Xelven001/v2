@@ -4,21 +4,35 @@ Presentation Script
              make an outline of the presentation, then write the script
       canva -> https://www.kaggle.com/datasets/paradisejoy/top-hits-spotify-from-20002019/data 
 
-version2
+
+
+version3
 -----Intro-----
-      Hello and welcome to our presentation, Spotify Data Visualizations. Our group focused on analyzing top music trends from between 1998 and 2020 and created an interactive website to display it. I'm {everyone introduces themselves}.
-(add a bit about how music changes over time and influecnes other music and with analysis can find what i spopoular, what works, etc)
+      Hello and welcome to our presentation, Spotify Data Visualizations. Our group analyzed music trends between 1998 and 2020, then created an interactive website to display them. Hello, I'm [everyone introduces themselves]. 
+      We chose this topic because music is an integral part of society that reflects and influences culture. Music changes over time and genres influence each other or emerge. Our presentation is a small glimpse into what trends have occurred during two decades. 
 
 -----Project Goals-----
-      To begin, our data. We chose the dataset 'Top Hits Spotify from 2000-2019.' We chose this dataset because we believed it to be interesting to study music and its trends. 
-      Our main objective was to analyze the Spotify dataset and discern any notable patterns or trends from it. Music is well intertwined with society, and studying its trends over time might discern something or other. 
+      To begin, our main objective was to analyze the data for any notable patterns ot trends. The music was quantified based on variables such as song duration, tempo (aka beats per minute, bpm), and speechiness (how much speech was in the track). 
+      More specifically, we wanted to investigate quantitatively how music varies depending on time or genre. Some notable examples include rock from the 50s compared to rock from the 70s, such as Elvis Presley versus Queen. Both are rock but are very different. While 'style' or 'vibe' aren't measurable, factors like duration or danceability can be measured and tracked over time. 
+      We also wanted to investigate explicitness across time and genre. Some genres have more 'reputation' for explicit material. However, society also trends to being okay with more subjects as time goes on. 
+Investigate how explicitness varies across time and genre
+
+
+
+
+our dataset quantitatively descibes the music and its qualities. Each quality has 
+
+-----Data Sources-----
+We chose the dataset 'Top Hits Spotify from 2000-2019.' This is provided by Data Science company Kaggle has statistics of the top 2000 tracks from Spotify between 1998 and 2020. It contains 18 columns describing the tracks including genre, loudness, duration, and more. 
+
+
       More specifically, we wanted to investigate quantitatively how genres differ. Qualitatively they differ based on sound, origin, theme. To study then quantitatively the dataset included measured variables. These include speechiness (words compared to non-word parts of a recording) or tempo (measured in beats per minute). With these quantitative variables we can mathmatecally analyze the data. 
       We also were interested in investingating how explicit songs trended to be across time and genre, and which time or genre was more expplicit
       Lastly, another investigation was how song duration tended to change across time and genre, as songs have a lot of variability in length. 
       For all of this we generated interactive visualizations to communicate the trends.
 
 -----Data Sources-----
-      And here is our dataset, and the link via the Data science company Kaggle
+
 
 -----Considerations and Limitations-----
       
