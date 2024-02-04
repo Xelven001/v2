@@ -4,21 +4,44 @@ Presentation Script
              make an outline of the presentation, then write the script
       canva -> https://www.kaggle.com/datasets/paradisejoy/top-hits-spotify-from-20002019/data 
 
-version2
+notes for meeting:
+What mean with limitations on canva, what is 'user preference' mean? Like, how to explain it more in detail.
+
+version3
 -----Intro-----
-      Hello and welcome to our presentation, Spotify Data Visualizations. Our group focused on analyzing top music trends from between 1998 and 2020 and created an interactive website to display it. I'm {everyone introduces themselves}.
-(add a bit about how music changes over time and influecnes other music and with analysis can find what i spopoular, what works, etc)
+      Hello and welcome to our presentation, Spotify Data Visualizations. Our group analyzed music trends between 1998 and 2020, then created an interactive website to display them. Hello, I'm [everyone introduces themselves]. 
+      We chose this topic because music is an integral part of society that reflects and influences culture. Music changes over time and genres influence each other or emerge. Our presentation is a small glimpse into what trends have occurred during two decades. 
 
 -----Project Goals-----
-      To begin, our data. We chose the dataset 'Top Hits Spotify from 2000-2019.' We chose this dataset because we believed it to be interesting to study music and its trends. 
-      Our main objective was to analyze the Spotify dataset and discern any notable patterns or trends from it. Music is well intertwined with society, and studying its trends over time might discern something or other. 
-      More specifically, we wanted to investigate quantitatively how genres differ. Qualitatively they differ based on sound, origin, theme. To study then quantitatively the dataset included measured variables. These include speechiness (words compared to non-word parts of a recording) or tempo (measured in beats per minute). With these quantitative variables we can mathmatecally analyze the data. 
-      We also were interested in investingating how explicit songs trended to be across time and genre, and which time or genre was more expplicit
-      Lastly, another investigation was how song duration tended to change across time and genre, as songs have a lot of variability in length. 
-      For all of this we generated interactive visualizations to communicate the trends.
+      To begin, our main objective was to analyze the data for any notable patterns ot trends. The music was quantified based on variables such as song duration, tempo (aka beats per minute, bpm), and speechiness (how much speech was in the track). 
+      More specifically, we wanted to investigate quantitatively how music varies depending on time or genre. Some notable examples include rock from the 50s compared to rock from the 70s, such as Elvis Presley versus Queen. Both are rock but are very different. While 'style' or 'vibe' aren't measurable, factors like duration or danceability can be measured and tracked over time. 
+      We also wanted to investigate explicitness across time and genre. As society trends towards being more accepting and open, how does explicitness change over time? 
+      Lastly, another specific apsect we wanted to investigate was how song duration changed over time, as it was a personal observation that songs seemed "shorter these days." 
+      The data will reveal how each aspect affects music (something something)
 
 -----Data Sources-----
-      And here is our dataset, and the link via the Data science company Kaggle
+We chose the dataset 'Top Hits Spotify from 2000-2019.' This is provided by Data Science company Kaggle has statistics of the top 2000 tracks from Spotify between 1998 and 2020. It contains 18 columns describing the tracks including genre, loudness, duration, and more. 
+
+-----Considerations and Limitations-----
+      There are a few considerations and limits to take into account
+      Firstly, this data is limited by source. It only comes from one place, Spotify. The data isn't cross-referenced with other sources such as the Billboard Hot 100, Apple Music, or other metrics that track music. 
+      Secondly, the dataset is relatively small compared to music as a whole. It only considers 'top hits.' This means songs that didn't chart or were not as popular are not considered in the dataset. It merges genres, so if only a few songs in a genre were included, the sample size is much smaller. To explain, in 2010 Pop had 44 songs compared to Rock having only 2. The sample sizes, when comparing genre, are inequal.
+      Secondly, what is considered a 'top hit' is not designated within the dataset. How 'popular' a song is is not revealed, if its based on streams, on radio plays, etc. 
+
+This means the music is limited to one source, and not from any other metrics of measuring popularity such as the Billboard Hot 100 or number of streams on other websites. This also means that songs that were not considered 'top hits' are not included. Also, the data is not uniform across years. For example, 1998 has only one song (or datapoint) compared to 1999 which has 50+ songs (datapoints). 
+      Secondly, 
+
+
+Smaller dataset
+data completeness 
+genre and/or cultural shifts 
+limited dataset size 
+metadata limitations
+user preferences
+sorry for scaring you!!! all good!
+ one source, not said how they decided ‘popularity’, data not uniform across years (1998 only has 1 song/datapoint compared to other yrs)
+
+
 
 -----Considerations and Limitations-----
       
