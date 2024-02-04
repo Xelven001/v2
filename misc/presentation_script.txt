@@ -21,27 +21,9 @@ version 3
 
 -----Project Goals-----
       To begin, our overall objective was to analyze the dataset for patterns and trends. What was the data saying by itself before we looked for specific metrics? Did anything stand out?
-      More specifically, we wanted to investigate quantitatively 
-
-
-
-Specific Goals: 
-Investigate how music variables vary across time and genre
-speechiness
-acousstiness
-energy 
-explicitness 
-song duration  
-
-version3
-
------Project Goals-----
-      More specifically, we wanted to investigate quantitatively how music varies depending on time or genre. Some notable examples include rock from the 50s compared to rock from the 70s, such as Elvis Presley versus Queen. Both are rock but are very different. While 'style' or 'vibe' aren't measurable, factors like duration or danceability can be measured and tracked over time. 
-      We also wanted to investigate explicitness across time and genre. As society trends towards being more accepting and open, how does explicitness change over time? 
-      Lastly, another specific apsect we wanted to investigate was how song duration changed over time, as it was a personal observation that songs seemed "shorter these days." 
-      The data will reveal how each aspect affects music (something something)
-
-
+      More specifically, we wanted to investigate quantitatively how music varies depending on time and genre. Music has changed notably throughout time, with notable examples including the difference in Elvis's rock music of the 50s and Queen's 20 years later in the 70s, or the recent rise of lofi music. 
+      While 'style' isn't measurable, factors such as speechiness, energy, and duration can be measured and tracked. The analysis took a look at each variable's change over time across four different music genres. How song duration has changed over time with Pop music, or how acousticness varies across different genres. 
+      From whatever findings we made, another goal was to create interactive visualizations to show off the findings  
 
 -----Considerations and Limitations-----
       There are a few limitations to take into account
@@ -49,8 +31,8 @@ version3
       Secondly, the dataset is relatively small compared to music as a whole. It only considers 'top hits.' This means songs that didn't chart or were not as popular are not considered in the dataset. It merges genres, so if only a few songs in a genre were included, the sample size is much smaller. To explain, in 2010 Pop had 44 songs compared to Rock having only 2. The sample sizes, when comparing genres, are inequal.
       There also must be some considerations as well. 
       These considerations include the dataset being relatively small, and having incomplete parts. 
-      Cultural shifts also have to be considered. As mentioned before, rock music in the 50s and 70s are very distinctly different despite being the same genre. Cultural shifts in how a genre is defined will skew the data. 
-      Also, despite Spotify declaring these 'top' songs, individual preference still exists. Just because a song was 'top' or 'popular' doesn't mean it was widely loved or like... onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Cultural shifts also have to be considered. As mentioned before, rock music in the 50s and 70s are very distinctly different despite being the same genre. Cultural shifts in how a genre is defined will skew the data. Or, the rise in popularity of a genre or new stuff.
+      Also, despite Spotify declaring these 'top' songs, individual preference still exists.
 
 -----Data Process and Cleanup-----
       The data was stored and extracted from a SQL database. SQLite was used to manipulate the data and create queries.
