@@ -10,21 +10,21 @@ i moved the dataset slide  it makes logical sense in my head but can move in cas
 
 
 version 3
------Intro-----
+-----Intro----- Jackie
       Hello and welcome to our presentation, Spotify Data Visualizations. Our group studied trends of four different music genres from between 1998 and 2020, then created an interactive website to display our findings. Hello I'm (everyone introduces themselves)
       We chose this topic because music is an integral part of society that reflects and influences culture. Music changes over time as genres influence each other or emerge. Our presentation is a small glimpse into some of the trends that have occurred in the past two decades. 
 
------Data Sources-----
+-----Data Sources----- Jackie
       We used the dataset 'Top Hits Spotify from 2000-2019' for our analysis. Its provided by data science company Kaggle and has statistics of the top 2,000 tracks between 1998 and 2020. 
       The dataset has 18 columns that break down different aspects of each track, for example genre and song duration. To elaborate, the music was quantified based on tempo (aka beats per minute), speechiness (how 'spoken' the track is), and loudness (measured in decibels).
 
------Project Goals-----
+-----Project Goals----- Jackie
       To begin, our overall objective was to analyze the dataset for patterns and trends. What was the data saying by itself before we looked for specific metrics? Did anything stand out?
       More specifically, we wanted to investigate quantitatively how music varies depending on time and genre. Music has changed notably throughout time, with notable examples including the difference in Elvis's rock music of the 50s and Queen's 20 years later in the 70s, or the recent rise of lofi music. 
       While 'style' isn't measurable, factors such as speechiness, energy, and duration can be measured and tracked. The analysis took a look at each variable's change over time across four different music genres. How song duration has changed over time with Pop music, or how acousticness varies across different genres. 
       From whatever findings we made, another goal was to create interactive visualizations to show off the findings  
 
------Considerations and Limitations-----
+-----Considerations and Limitations----- Madison
       There are a few limitations to take into account
       Firstly, this data is limited by source. It only comes from one place, Spotify. The data isn't cross-referenced with other notable sources such as the Billboard Hot 100 or Apple Music. Also, other metrics such as streams on other platforms (like YouTube), album sales, or radio plays are not taken into consideration on popularity or which songs were in the dataset. 
       Secondly, the dataset is relatively small compared to music as a whole. It only considers 'top hits.' This means songs that didn't chart or were not as popular are not considered in the dataset. It merges genres, so if only a few songs in a genre were included, the sample size is much smaller. To explain, in 2010 Pop had 44 songs compared to Rock having only 2. The sample sizes, when comparing genres, are inequal.
@@ -33,14 +33,22 @@ version 3
       Cultural shifts also have to be considered. As mentioned before, rock music in the 50s and 70s are very distinctly different despite being the same genre. Cultural shifts in how a genre is defined will skew the data. Or, the rise in popularity of a genre or new stuff.
       Also, despite Spotify declaring these 'top' songs, individual preference still exists.
 
------Data Process and Cleanup-----
+-----Data Process and Cleanup----- Josh
       The data was stored and extracted from a SQL database. SQLite was used to manipulate the data and create queries.
       HTML was used including Chart.js and Axios. Flask was used for querying.
       Visualizations were displayed through three seperate applications. 
       Something about how to create a database, set it up, transform the data, clean it up.
 
 
+visualizations - Carlos
 
+go to the website -> one each
+josh on first
+madison on second 
+jackie on third
+carlos on concludion
+
+conclusion -> 
 
 -----Visualization 1----
 genre -> average metric : change in metric over time for genre
