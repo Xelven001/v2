@@ -6,6 +6,13 @@ Presentation Script
 
 notes for meeting:
 What mean with limitations on canva, what is 'user preference' mean? Like, how to explain it more in detail.
+ask to elaborate more on making the database so I can fill the script
+
+
+version 3
+-----Intro-----
+      Hello and welcome to our presentation, Spotify Data Visualizations. Our group studied trends of four different music genres from between 1998 and 2020, then created an interactive website to display our findings. Hello I'm (everyone introduces themselves)
+
 
 version3
 -----Intro-----
