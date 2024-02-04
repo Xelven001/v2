@@ -14,13 +14,9 @@ version3
 -----Project Goals-----
       To begin, our main objective was to analyze the data for any notable patterns ot trends. The music was quantified based on variables such as song duration, tempo (aka beats per minute, bpm), and speechiness (how much speech was in the track). 
       More specifically, we wanted to investigate quantitatively how music varies depending on time or genre. Some notable examples include rock from the 50s compared to rock from the 70s, such as Elvis Presley versus Queen. Both are rock but are very different. While 'style' or 'vibe' aren't measurable, factors like duration or danceability can be measured and tracked over time. 
-      We also wanted to investigate explicitness across time and genre. Some genres have more 'reputation' for explicit material. However, society also trends to being okay with more subjects as time goes on. 
-Investigate how explicitness varies across time and genre
-
-
-
-
-our dataset quantitatively descibes the music and its qualities. Each quality has 
+      We also wanted to investigate explicitness across time and genre. As society trends towards being more accepting and open, how does explicitness change over time? 
+      Lastly, another specific apsect we wanted to investigate was how song duration changed over time, as it was a personal observation that songs seemed "shorter these days." 
+      The data will reveal how each aspect affects music (something something)
 
 -----Data Sources-----
 We chose the dataset 'Top Hits Spotify from 2000-2019.' This is provided by Data Science company Kaggle has statistics of the top 2000 tracks from Spotify between 1998 and 2020. It contains 18 columns describing the tracks including genre, loudness, duration, and more. 
